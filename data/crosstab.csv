@@ -1,0 +1,87 @@
+﻿Name,uid,pct_age_young,pct_age_mid1,Link,pct_age_mid2,pct_age_old,pct_dem,pct_rep,pct_ind,pct_male,pct_fem,pct_black,pct_white,pct_hisp,pct_race_other,notes
+Quinnipiac FL-Biden,132107_13256,56,50,,46,55,91,9,54,44,56,84,44,51,,
+Quinnipiac FL-Trump,132107_13254,32,40,,48,40,4,88,34,45,37,6,49,37,,
+Quinnipiac IA-Biden,132108_13256,58,42,,46,61,98,6,48,39,61,,,,,no racial breakdown
+Quinnipiac IA-Trump,132108_13254,38,54,,50,36,2,91,43,55,35,,,,,no racial breakdown
+Quinnipiac PA-Biden,132109_13256,58,59,,45,58,92,10,57,44,63,,51,,71,white/non-white
+Quinnipiac PA-Trump,132109_13254,36,36,,52,39,5,86,39,50,33,,46,,22,white/non-white
+NYT OH-Biden,132099_13256,51,52,,40,46,94,7,42,39,51,,42,,67,white/non-white
+NYT OH-Trump,132099_13254,33,39,,49,48,4,89,38,49,40,,49,,20,white/non-white
+NYT NV-Biden,132100_13256,57,43,,50,45,93,4,42,44,52,,41,,61,white/non-white
+NYT NV-Trump,132100_13254,30,42,,41,49,5,93,37,47,38,,52,,27,white/non-white
+,,,,,,,,,,,,,,,,
+Data Orbital AZ-Biden,132090_13256,49,53,,44,46,85,12,51,37,55,76,42,57,,Left out middle age category and Other ethnicity (asian and other were both available)
+Data Orbital AZ-Trump,132090_13254,32,27,,44,51,7,81,27,48,37,18,47,28,,Left out middle age category and Other ethnicity (asian and other were both available)
+Emerson PA-Biden,132039_13256,62,51,,48,44,81,12,51,46,53,79,45,55,,Left out middle age category and Other ethnicity (asian and other were both available)
+Emerson PA-Trump,132039_13254,32,42,,50,53,17,85,32,48,43,21,50,38,,Left out middle age category and Other ethnicity (asian and other were both available)
+Monmouth PA-Biden,131999_13256,54,,,54,55,97,8,59,48,61,,49,,83,low likely turnout. Young = 18-49. White/non-white.
+Monmouth PA-Biden,131999_13254,40,,,45,42,2,89,34,49,35,,48,,16,low likely turnout
+Suffolk FL-Biden,131979_13256,42,42,,48,49,89,6,42,42,49,81,41,46,,
+Suffolk FL-Trump,131979_13254,37,50,,47,46,7,92,50,47,44,3,57,42,,
+UNF FL-Biden,131976_13256,69,61,,49,47,97,7,50,45,56,93,43,47,46,"skipped 25-34 and 55-64 age groups - kept middle-2, top and bottom age brackets."
+UNF FL-Trump,131976_13254,23,36,,48,50,1,90,42,51,39,7,54,47,44,
+NYT AZ-Biden,131638_13256,64,53,,43,48,95,6,53,44,55,,42,65,70,"White/Hisp/Other "
+NYT AZ-Trump,131638_13254,22,38,,48,47,3,90,28,46,37,,49,27,19,"White/Hisp/Other "
+YouGov PA-Biden,131595_13256,64,54,,47,47,90,8,50,45,56,,45,,,Only white voters broken out
+YouGov PA-Trump,131595_13254,31,37,,47,48,6,87,40,50,38,,49,,,Only white voters broken out
+NYT PA-Biden,131409_13256,62,49,,43,53,91,11,47,44,54,,44,,73,White/Other
+NYT PA-Trump,131409_13254,29,40,,47,42,5,84,34,46,39,,47,,22,White/Other
+NYT FL-Biden,131408_13256,62,48,,43,47,93,11,45,42,52,75,38,58,,White/Black/Hisp
+NYT FL-Trump,131408_13254,25,38,,48,45,3,87,33,47,38,5,52,34,,White/Black/Hisp
+Suffolk AZ-Biden,130641_13256,46,52,,53,51,99,6,44,44,56,,49,,54,White/Other
+Suffolk AZ-Trump,130641_13254,46,47,,45,46,1,93,46,52,41,,49,,39,White/Other
+UMass NC-Biden,130466_13256,52,,,,45,92,6,40,43,51,39,75,,52,"2 age brackets- 18-44 and 65+ "
+UMass NC-Trump,130466_13254,36,,,,54,4,91,42,51,44,57,16,,39,"2 age brackets- 18-44 and 65+ "
+Marist WI-Biden,130357_13256,58,,,,59,98,4,59,48,59,,52,,70,"White/Other. Age under-45, over-45, over-65 - I only tracked youngest and oldest"
+Marist WI-Trump,130357_13254,37,,,,38,2,95,35,49,39,,45,,27,"White/Other. Age under-45, over-45, over-65 - I only tracked youngest and oldest"
+Marist MI-Biden,130356_13256,53,,,,53,97,4,56,45,59,90,49,,41,"White/Black/Other. Age under-45, over-45, over-65 - I only tracked youngest and oldest"
+Marist MI-Trump,130356_13254,41,,,,45,2,95,37,51,37,7,47,,50,"White/Black/Other. Age under-45, over-45, over-65 - I only tracked youngest and oldest"
+YouGov NC-Biden,130352_13256,50,51,,51,40,95,4,40,39,56,83,37,,,White/Black only
+YouGov NC-Trump,130352_13254,39,44,,45,55,4,93,46,56,37,10,58,,,White/Black only
+FoxNews NV-Biden,130282_13256,63,,,,52,93,9,40,49,55,,46,61,,Age under-35 and over-65. White/hispanic
+FoxNews NV-Trump,130282_13254,27,,,,44,4,87,34,43,40,,48,33,,Age under-35 and over-65. White/hispanic
+FoxNews OH-Biden,130283_13256,58,,,,51,94,8,,45,55,,44,,85,Age under-35 and over-65. White/other. No independents
+FoxNews OH-Trump,130283_13254,35,,,,43,3,89,,49,41,,51,,10,Age under-35 and over-65. White/other. No independents
+FoxNews PA-Biden,130284_13256,64,,,,52,92,8,,46,56,,45,,84,Age under-35 and over-65. White/other. No independents
+FoxNews PA-Trump,130284_13254,31,,,,44,5,89,,50,39,,51,,10,Age under-35 and over-65. White/other. No independents
+Quinnipiac OH-Biden,130270_13256,45,49,,47,52,95,10,45,40,55,91,43,,,White/black
+Quinnipiac OH-Trump,130270_13254,46,47,,50,45,4,89,46,54,40,6,52,,,White/black
+ABC FL-Biden,129894_13256,50,,,48,44,94,5,48,40,52,,38,,67,"Age under-40, 45-64, over-65. White/other"
+ABC FL-Trump,129894_13254,45,,,51,52,5,92,47,59,44,,60,,30,"Age under-40, 45-64, over-65. White/other"
+ABC AZ-Biden,129892_13256,56,,,37,44,94,8,57,43,52,,43,,58,"Age under-49, 50-64, over-65. White/other"
+ABC AZ-Trump,129892_13254,39,,,59,54,6,89,38,55,42,,54,,36,"Age under-49, 50-64, over-65. White/other"
+Emerson NC-Biden,129616_13256,71,70,,39,37,90,10,43,51,49,,45,,69,White/other
+Emerson NC-Trump,129616_13254,28,27,,60,63,9,89,55,48,50,,54,,30,White/other
+YouGov FL-Biden,129606_13256,62,52,,46,44,94,7,43,45,51,87,37,56,,
+YouGov FL-Trump,129606_13254,30,38,,50,53,5,90,46,51,42,8,59,36,,
+NYT AZ-Biden,129506_13256,53,57,,43,51,94,8,52,45,54,,45,57,67,White/hisp/other
+NYT AZ-Trump,129506_13254,25,32,,50,40,3,89,23,43,37,,46,26,25,White/hisp/other
+NYT NC-Biden,129508_13256,62,43,,40,44,90,5,42,44,45,86,34,,,white/black
+NYT NC-Trump,129508_13254,20,44,,50,50,4,89,39,43,44,2,56,,,white/black
+NYT NV2-Biden,129276_13256,53,42,,40,57,89,5,41,41,53,,41,,58,white/other
+NYT NV2-Trump,129276_13254,26,40,,54,37,3,93,36,48,37,,52,,24,white/other
+NYT WI-Biden,129278_13256,73,36,,42,53,94,7,49,44,52,,47,,71,white/other
+NYT WI-Trump,129278_13254,15,52,,50,42,3,90,35,46,39,,45,,21,white/other
+Emerson WI-Biden,129251_13256,60,49,,48,52,89,10,55,52,50,59,50,55,,
+Emerson WI-Trump,129251_13254,33,44,,48,45,6,89,35,44,44,27,45,39,,
+YouGov WI-Biden,128231_13256,,55,,49,44,94,4,49,44,54,,46,,,Young people and minorities not reported (suspect inadequate sample size)
+YouGov WI-Trump,128231_13254,,36,,45,50,4,92,36,49,39,,48,,,Young people and minorities not reported (suspect inadequate sample size)
+FoxNews NC-Biden,128019_13256,,,,,,92,6,,47,53,88,37,,,omitting age as only sub-45 and over-45 reported.
+FoxNews NC-Trump,128019_13254,,,,,,3,93,,49,43,5,60,,,omitting age as only sub-45 and over-45 reported.
+YouGov OH-Biden,131596_13256,55,50,,45,43,94,6,40,43,50,86,41,,,white/black
+YouGov OH-Trump,131596_13254,35,42,,48,52,3,91,46,51,43,8,52,,,white/black
+ABC MN-Biden,129399_13256,,,,,58,98,89,58,48,67,,,,,
+ABC MN-Trump,129399_13254,,,,,41,2,10,37,51,31,,,,,
+YouGov MN-Biden,129304_13256,55,57,,46,48,93,5,52,45,55,,47,,,
+YouGov MN-Trump,129304_13254,36,37,,42,48,4,90,32,46,37,,45,,,white only
+NYT MN-Biden,129275_13256,67,57,,40,52,94,3,52,44,56,,49,,60,white/other
+NYT MN-Trump,129275_13254,22,34,,52,40,1,94,33,43,38,,43,,27,white/other
+SurveyUSA MN-Biden,128382_13256,55,49,,39,54,94,5,47,44,54,,48,,,"white only race value among my categories (asian included in poll, but leaving that out)"
+SurveyUSA MN-Trump,128382_13254,32,40,,45,42,2,90,30,45,36,,43,,,"white only race value among my categories (asian included in poll, but leaving that out)"
+Emerson MI-Biden,"
+132225_13256
+",57,51,,50,55,89,7,56,49,56,78,48,,,white/black (other race categories omitted b/c n<10)
+Emerson MI-Trump,"
+132225_13254
+",33,39,,46,44,7,91,30,47,39,20,46,,,white/black (other race categories omitted b/c n<10)
+,,,,,,,,,,,,,,,,
