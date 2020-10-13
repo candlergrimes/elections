@@ -2,7 +2,7 @@ import pandas as pd
 
 pd.set_option('mode.chained_assignment',None)
 
-state_list = ['Arizona','Wisconsin','Pennsylvania','Nevada','North Carolina','Florida','Ohio','Minnesota','Michigan']
+state_list = ['Arizona','Wisconsin','Pennsylvania','Nevada','North Carolina','Florida','Ohio','Minnesota','Michigan','Georgia']
 fte_list = ['A','A-','A/B','A+','B','B-','B/C','B+']
 
 polls_fh = open('./data/president_polls.csv') # get file handle for current 538 polling data
