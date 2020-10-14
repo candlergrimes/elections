@@ -25,21 +25,18 @@ polls = polls.set_index('uid')
 crosstab = crosstab.set_index('uid')
 polls = polls.join(crosstab, lsuffix='_polls', rsuffix='_crosstab')
 polls = polls[polls['Property'].notna()]
-#print(polls.head())
-
-with open('./data/output.csv','a') as out_file:
-    polls.to_csv(out_file)
 
 unique = polls.drop_duplicates(subset='question_id')
 questions = unique.question_id.tolist()
 
 
 diff_list = [] #container for diff dictionaries below. Will be written to the diff dataframe
-#undecided_list = []
+undecided_list = []
 
 for item in questions:
     dem = polls[(polls['question_id'] == item) & (polls['candidate_party'] == "DEM")]
     rep = polls[(polls['question_id'] == item) & (polls['candidate_party'] == "REP")]
+
     pct = dem.iloc[0]['pct'] - rep.iloc[0]['pct']
     pct_age_young = dem.iloc[0]['pct_age_young'] - rep.iloc[0]['pct_age_young']
     pct_age_mid1 = dem.iloc[0]['pct_age_mid1'] - rep.iloc[0]['pct_age_mid1']
@@ -55,9 +52,12 @@ for item in questions:
     pct_hisp = dem.iloc[0]['pct_hisp'] - rep.iloc[0]['pct_hisp']
     pct_race_other = dem.iloc[0]['pct_race_other'] - rep.iloc[0]['pct_race_other']
     question_id = item
+    state = dem.iloc[0]['state']
+
 
     diff_dict = {
         "question_id": question_id,
+        "state": state,
         "pct_age_young": pct_age_young,
         "pct_age_mid1": pct_age_mid1,
         "pct_age_mid2": pct_age_mid2,
@@ -75,7 +75,64 @@ for item in questions:
 
     diff_list.append(diff_dict)
 
-    #undecided_dict =
+    und = dem.iloc[0]['pct'] + rep.iloc[0]['pct']
+    und_age_young = 100 - (dem.iloc[0]['pct_age_young'] + rep.iloc[0]['pct_age_young'])
+    und_age_mid1 = 100 - (dem.iloc[0]['pct_age_mid1'] + rep.iloc[0]['pct_age_mid1'])
+    und_age_mid2 = 100 - (dem.iloc[0]['pct_age_mid2'] + rep.iloc[0]['pct_age_mid2'])
+    und_age_old = 100 - (dem.iloc[0]['pct_age_old'] + rep.iloc[0]['pct_age_old'])
+    und_dem = 100 - (dem.iloc[0]['pct_dem'] + rep.iloc[0]['pct_dem'])
+    und_rep = 100 - (dem.iloc[0]['pct_rep'] + rep.iloc[0]['pct_rep'])
+    und_ind = 100 - (dem.iloc[0]['pct_ind'] + rep.iloc[0]['pct_ind'])
+    und_male = 100 - (dem.iloc[0]['pct_male'] + rep.iloc[0]['pct_male'])
+    und_fem = 100 - (dem.iloc[0]['pct_fem'] + rep.iloc[0]['pct_fem'])
+    und_black = 100 - (dem.iloc[0]['pct_black'] + rep.iloc[0]['pct_black'])
+    und_white = 100 - (dem.iloc[0]['pct_white'] + rep.iloc[0]['pct_white'])
+    und_hisp = 100 - (dem.iloc[0]['pct_hisp'] + rep.iloc[0]['pct_hisp'])
+    und_race_other = 100 - (dem.iloc[0]['pct_race_other'] + rep.iloc[0]['pct_race_other'])
 
+    undecided_dict = {
+        "question_id": question_id,
+        "state": state,
+        "und_age_young": und_age_young,
+        "und_age_mid1": und_age_mid1,
+        "und_age_mid2": und_age_mid2,
+        "und_age_old": und_age_old,
+        "und_dem": und_dem,
+        "und_rep": und_rep,
+        "und_ind": und_ind,
+        "und_male": und_male,
+        "und_fem": und_fem,
+        "und_black": und_black,
+        "und_white": und_white,
+        "und_hisp": und_hisp,
+        "und_race_other": und_race_other
+        }
+
+    undecided_list.append(undecided_dict)
 
 diff = pd.DataFrame(diff_list)
+undecideds = pd.DataFrame(undecided_list)
+
+for i in state_list:
+    state_polls = diff.loc[diff['state'] == i]
+
+    pct_age_young = state_polls['pct_age_young'].mean()
+    pct_age_mid1 = state_polls['pct_age_mid1'].mean()
+    pct_age_mid2 = state_polls['pct_age_mid2'].mean()
+    pct_age_old = state_polls['pct_age_old'].mean()
+    pct_dem = state_polls['pct_dem'].mean()
+    pct_rep = state_polls['pct_rep'].mean()
+    pct_ind = state_polls['pct_ind'].mean()
+    pct_male = state_polls['pct_male'].mean()
+    pct_fem = state_polls['pct_fem'].mean()
+    pct_black = state_polls['pct_black'].mean()
+    pct_white = state_polls['pct_white'].mean()
+    pct_hisp = state_polls['pct_hisp'].mean()
+    pct_race_other = state_polls['pct_race_other'].mean()
+
+    #print(i)
+    #averages = state_polls.mean()
+    #print(averages)
+
+    #counts = state_polls.count()
+    #print(counts)
