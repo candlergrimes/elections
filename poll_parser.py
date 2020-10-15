@@ -112,27 +112,26 @@ for item in questions:
 
 diff = pd.DataFrame(diff_list)
 undecideds = pd.DataFrame(undecided_list)
+averages = pd.DataFrame()
+counts = pd.DataFrame()
 
 for i in state_list:
-    state_polls = diff.loc[diff['state'] == i]
+    state_polls_diff = diff.loc[diff['state'] == i]
 
-    pct_age_young = state_polls['pct_age_young'].mean()
-    pct_age_mid1 = state_polls['pct_age_mid1'].mean()
-    pct_age_mid2 = state_polls['pct_age_mid2'].mean()
-    pct_age_old = state_polls['pct_age_old'].mean()
-    pct_dem = state_polls['pct_dem'].mean()
-    pct_rep = state_polls['pct_rep'].mean()
-    pct_ind = state_polls['pct_ind'].mean()
-    pct_male = state_polls['pct_male'].mean()
-    pct_fem = state_polls['pct_fem'].mean()
-    pct_black = state_polls['pct_black'].mean()
-    pct_white = state_polls['pct_white'].mean()
-    pct_hisp = state_polls['pct_hisp'].mean()
-    pct_race_other = state_polls['pct_race_other'].mean()
+    avg = state_polls_diff.mean()
+    avg['state'] = i
 
-    #print(i)
-    #averages = state_polls.mean()
-    #print(averages)
+    cnt = state_polls_diff.count()
+    cnt['state'] = i
 
-    #counts = state_polls.count()
-    #print(counts)
+    averages = averages.append(avg, ignore_index=True)
+    counts = counts.append(cnt,ignore_index=True)
+
+
+averages = averages.set_index('state')
+counts = counts.set_index('state')
+averages = averages.join(counts,lsuffix = '_avg',rsuffix = '_cnt')
+print(averages)
+
+    #state_polls_und = undecideds.loc[undecideds['state'] == i]
+    #averages =
