@@ -11,8 +11,8 @@ Landmark GA-Trump,132266_13254,42,,47,61,12,84,31,53,52,10,68,,41,"white/black/o
 Landmark GA-Biden,132266_13256,49,,50,37,87,11,60,40,45,85,28,,46,"white/black/other. Age: 18-40, 40-65,65+",Sean Grimes
 Public Policy Polling GA-Trump,132272_13254,34,,46,62,3,90,44,58,36,6,67,,41,"white/black/other. Age: 18-45, 45-65,65+",Sean Grimes
 Public Policy Polling GA-Biden,132272_13256,53,,50,37,91,7,45,37,56,83,29,,55,"white/black/other. Age: 18-45, 45-65,65+",Sean Grimes
-YouGov MI-Trump,132308_13254,29,42,42,48,3,4,38,48,38,6,50,,,white/black,Sean Grimes
-YouGov MI-Biden,132308_13256,58,49,49,48,95,91,49,44,55,91,42,,,white/black,Sean Grimes
+YouGov MI-Trump,132308_13254,29,42,42,48,3,91,38,48,38,6,50,,,white/black,Sean Grimes
+YouGov MI-Biden,132308_13256,58,49,49,48,95,4,49,44,55,91,42,,,white/black,Sean Grimes
 YouGov NV-Trump,132309_13254,27,39,48,51,5,88,46,49,38,,52,32,,white/hisp,Sean Grimes
 YouGov NV-Biden,132309_13256,64,51,45,43,91,7,39,43,54,,40,65,,white/hisp,Sean Grimes
 YouGov IA-Trump,132310_13254,37,40,51,47,4,89,39,51,39,,47,,,white only,Sean Grimes
@@ -37,8 +37,8 @@ NYT WI-Trump,129278_13254,15,52,50,42,3,90,35,46,39,,45,,21,white/other,Sean Gri
 NYT WI-Biden,129278_13256,73,36,42,53,94,7,49,44,52,,47,,71,white/other,Sean Grimes
 YouGov MN-Trump,129304_13254,36,37,42,48,4,90,32,46,37,,45,,,white only,Sean Grimes
 YouGov MN-Biden,129304_13256,55,57,46,48,93,5,52,45,55,,47,,,,Sean Grimes
-ABC MN-Trump,129399_13254,,,,41,2,10,37,51,31,,,,,,Sean Grimes
-ABC MN-Biden,129399_13256,,,,58,98,89,58,48,67,,,,,,Sean Grimes
+ABC MN-Trump,129399_13254,,,,41,2,89,37,51,31,,,,,,Sean Grimes
+ABC MN-Biden,129399_13256,,,,58,98,10,58,48,67,,,,,,Sean Grimes
 NYT AZ-Trump,129506_13254,25,32,50,40,3,89,23,43,37,,46,26,25,White/hisp/other,Sean Grimes
 NYT AZ-Biden,129506_13256,53,57,43,51,94,8,52,45,54,,45,57,67,White/hisp/other,Sean Grimes
 NYT NC-Trump,129508_13254,20,44,50,50,4,89,39,43,44,2,56,,,white/black,Sean Grimes
@@ -101,4 +101,19 @@ Quinnipiac PA-Trump,132109_13254,36,36,52,39,5,86,39,50,33,,46,,22,white/non-whi
 Quinnipiac PA-Biden,132109_13256,58,59,45,58,92,10,57,44,63,,51,,71,white/non-white,Sean Grimes
 Emerson FL-Biden,132342_13256,57,45,49,51,84,11,55,43,56,87,43,52,,white/black/hisp,Sean Grimes
 Emerson FL-Trump,132342_13254,42,49,51,45,15,88,38,53,42,9,54,48,,white/black/hisp,Sean Grimes
-,,,,,,,,,,,,,,,,Sean Grimes
+FAU FL-Biden,132391_13256,58,44,48,54,91,9,49,44,56,83,43,59,,white/black/hisp,Sean Grimes
+FAU FL-Trump,132391_13254,40,51,49,42,7,90,41,54,40,14,53,39,,white/black/hisp,Sean Grimes
+Monmouth NC-Biden,132413_13256,49,,48,51,96,5,43,42,55,,37,,82,"Age: 18-49, 50-65, 65+ and Race: white/other",Sean Grimes
+Monmouth NC-Trump,132413_13254,43,,50,48,4,95,46,52,42,,59,,13,"Age: 18-49, 50-65, 65+ and Race: white/other",Sean Grimes
+NYT NC-Biden,132861_13256,56,48,46,40,94,6,37,39,52,89,35,,,white/black,Sean Grimes
+NYT NC-Trump,132861_13254,35,39,40,51,2,92,38,45,39,3,55,,,white/black,Sean Grimes
+SurveyUSA GA-Biden,132826_13256,50,56,45,41,94,4,44,40,55,89,23,63,,white/black/hisp,Sean Grimes
+SurveyUSA GA-Trump,132826_13254,40,42,49,56,3,93,34,53,40,7,69,36,,white/black/hisp,Sean Grimes
+Quinnipiac GA-Biden,132867_13256,59,54,51,48,97,6,51,47,55,89,36,,,white/black,Sean Grimes
+Quinnipiac GA-Trump,132867_13254,35,42,46,49,1,93,41,47,41,3,63,,,white/black,Sean Grimes
+Quinnipiac OH-Biden,132866_13256,51,49,45,52,96,7,55,40,55,93,43,,,white/black,Sean Grimes
+Quinnipiac OH-Trump,132866_13254,42,46,52,44,3,91,38,53,41,2,53,,,white/black,Sean Grimes
+SurveyUSA NC-Biden,132432_13256,59,50,50,41,98,4,43,47,53,93,35,51,,white/black/hisp,Sean Grimes
+SurveyUSA NC-Trump,132432_13254,33,42,47,57,2,94,42,49,42,3,60,38,,white/black/hisp,Sean Grimes
+Monmouth AZ-Biden,133067_13256,52,,42,42,93,9,54,43,56,,42,68,,"white/hisp. Age: 18-49, 50-65, 65+",Sean Grimes
+Monmouth AZ-Trump,133067_13254,39,,52,56,5,90,33,48,40,,51,26,,"white/hisp. Age: 18-49, 50-65, 65+",Sean Grimes
