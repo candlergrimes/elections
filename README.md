@@ -19,6 +19,3 @@
 * undecided_output.csv: list of states with proportions (and counts) of non-REP/DEM voters for each crosstab
     * NOTE: This includes 3rd party voters, so "undecided" isn't a great term...
 
-
-1. Create the `states` object  
-2. Compute averages for each `state` in each crosstab where count ≥ 3
