@@ -131,7 +131,33 @@ for i in state_list:
 averages = averages.set_index('state')
 counts = counts.set_index('state')
 averages = averages.join(counts,lsuffix = '_avg',rsuffix = '_cnt')
+print('DIFF')
 print(averages)
 
-    #state_polls_und = undecideds.loc[undecideds['state'] == i]
-    #averages =
+with open('./data/diff_output.csv','a') as diff_output:
+    averages.to_csv(diff_output)
+
+averages = pd.DataFrame()
+counts = pd.DataFrame()
+
+for i in state_list:
+    state_polls_und = undecideds.loc[undecideds['state'] == i]
+
+    avg = state_polls_und.mean()
+    avg['state'] = i
+
+    cnt = state_polls_und.count()
+    cnt['state'] = i
+
+    averages = averages.append(avg, ignore_index=True)
+    counts = counts.append(cnt, ignore_index=True)
+
+averages = averages.set_index('state')
+counts = counts.set_index('state')
+averages = averages.join(counts,lsuffix = '_avg',rsuffix = '_cnt')
+
+print('UNDECIDED')
+print(averages)
+
+with open('./data/undecided_output.csv','a') as undecided_output:
+    averages.to_csv(undecided_output)
